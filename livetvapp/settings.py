@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     #MY APP LIST
     'rest_framework',
     'rest_framework.authtoken',
-    'livetvapp',
+    'livetvapi',
 ]
 
 MIDDLEWARE = [
