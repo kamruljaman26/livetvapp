@@ -8,3 +8,4 @@ class LiveTvViewSet(viewsets.ModelViewSet):
     """Handle createing, reading and updating LiveTv API Data"""
     serializer_class = serializers.TvLinkSerializer
     queryset = models.TvLink.objects.all()
+    
