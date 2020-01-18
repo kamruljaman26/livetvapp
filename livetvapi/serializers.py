@@ -14,3 +14,15 @@ class TvLinkSerializer(serializers.ModelSerializer):
             'tv4name', 'tv4link', 'tv4ylink',
             'tv5name', 'tv5link', 'tv5ylink'
         )
+
+
+class AdsServiceSerializer(serializers.ModelSerializer):
+    """Serializer for Ads Service"""
+
+    class Meta:
+        model = models.AdsService
+        fields = (
+            'selectedAddService',
+            'status',
+            'cnt'
+        )

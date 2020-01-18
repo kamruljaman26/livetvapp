@@ -1,8 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser
-from django.contrib.auth.models import PermissionsMixin
-
-import json
 
 class TvLink(models.Model):
     """Database models for Live TV App"""
@@ -28,5 +24,16 @@ class TvLink(models.Model):
 
     def __str__(self):
         """To String Method"""
-        return json.loads(self)
+        tv_list = "ALL TV LINKS"
+        return tv_list
 
+
+class AdsService(models.Model):
+    """Database model for Ads Service"""
+    selectedAddService = models.CharField(max_length=100, default="google")
+    status = models.CharField(max_length=100, default="yes")
+    cnt = models.IntegerField(max_length=5,default=4)
+
+    def __str__(self):
+        """To String Method"""
+        return "ADS SERVICE"
