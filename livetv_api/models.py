@@ -32,7 +32,7 @@ class AdsService(models.Model):
     """Database model for Ads Service"""
     selectedAddService = models.CharField(max_length=100, default="google")
     status = models.CharField(max_length=100, default="yes")
-    cnt = models.IntegerField(default=4)
+    cnt = models.IntegerField()
 
     def __str__(self):
         """To String Method"""
